@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osobní portfolio</title>
+    <link rel="icon" href=
+    "./obrazky/logo/bwlogo.svg"
+            type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body id="home">
+    <div class="content">
+        <nav id="navbar">
+            <div id="logo"><a href="index.html"> <span class="text-primary"><img src="./obrazky/logo/bwlogo.svg" alt="logo" class="logo"> Osobní potrfolio</span></a></div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="obrazy.html">Obrazy</a></li>
+                <li><a href="komiks.html?pg=1#showComic">Komiks</a></li>
+                <li><a href="objednavka.html">Objednávka</a></li>
+                <li><a href='o-me.html'>O mě</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <form action="#">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Jméno objednavajícího</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Jméno a příjmení">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Email </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Email.">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="format">Druh malby</label>
+            </div>
+            <div class="col-75">
+              <select id="format" name="format">
+                <option value="Ltuz">Lavírovaná tuž</option>
+                <option value="tuz">tuž</option>
+                <option value="tuzka">tužka</option>
+                <option value="uhel">uhel</option>
+                <option value="vodovky">vodové barvy</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">popis obrazu</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="piště tady.." style="height:200px"></textarea>
+            </div>
+          </div>  
+            <input type="submit" value="Submit">
+          
+        </form>
+      </div>
+
+    <footer id="footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2024</p>
+        </div>
+    </footer>
+    
+</html>
