@@ -323,6 +323,11 @@ input[type=text], select, textarea {
         background: url("../obrazky/profil/1.jpg") no-repeat center center/cover;
     }
 
+    video {
+      display: block;
+      margin: 0 auto;
+    }
+
     
 
     /* comic */
